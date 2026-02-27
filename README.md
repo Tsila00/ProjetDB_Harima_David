@@ -63,4 +63,5 @@ fournir des informations supplémentaires sur chaque donnée (taille et type) ma
 | Niveau de la performance enregistrée | Texte (Alphanumérique) | 50 caractères |
 
 Le MCD a été réalisé via un outil de modélisation et le fichier source est inclus dans ce dépôt GitHub.
+<img width="1639" height="801" alt="Capture d&#39;écran 2026-02-27 154057" src="https://github.com/user-attachments/assets/46fb6471-b201-40bd-9ab2-4b10c276cd99" />
 
