@@ -65,3 +65,19 @@ fournir des informations supplémentaires sur chaque donnée (taille et type) ma
 Le MCD a été réalisé via un outil de modélisation et le fichier source est inclus dans ce dépôt GitHub.
 <img width="1639" height="801" alt="Capture d&#39;écran 2026-02-27 154057" src="https://github.com/user-attachments/assets/46fb6471-b201-40bd-9ab2-4b10c276cd99" />
 
+
+Partie 2 : 
+
+MLD : 
+OFFICIEL = (id_officiel INT, nom_off VARCHAR(50), prenom_off VARCHAR(50), niveau_certif_off VARCHAR(50), role_off VARCHAR(50));
+EPREUVE = (id_epreuve INT, nom_epreuve VARCHAR(50), categorie_age VARCHAR(50));
+VILLE = (code_postal INT, ville VARCHAR(50));
+CLUB = (id_club INT, nom_club VARCHAR(100), e_mail_ VARCHAR(50), #(code_postal, ville));
+STADE = (id_stade INT, nom_stade VARCHAR(100), type_revetement_piste VARCHAR(50), altitude DECIMAL(15,2), nb_couloirs VARCHAR(50), #(code_postal, ville));
+ATHLETE = (id_licence INT, nom VARCHAR(50), prenom VARCHAR(50), sexe VARCHAR(1), date_naissance DATE, nationalite VARCHAR(50), #id_club);
+COMPETITION = (id_comp INT, nom_event VARCHAR(50), date_event DATE, niv_compet VARCHAR(50), #id_stade);
+supervise = (#id_comp, #id_officiel);
+Entraine = (#id_licence_entraine, #id_licence_est_entraîné_par);
+Performance = (#id_licence, #id_comp, #id_epreuve, temps DECIMAL(15,2), vent DECIMAL(15,2), niv_perf VARCHAR(50));
+
+
