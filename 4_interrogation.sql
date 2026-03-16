@@ -6,10 +6,10 @@ FROM ATHLETE
 WHERE sexe = 'F' 
 ORDER BY nom ASC, prenom ASC;
 
--- 2. Récupérer les athlètes nés entre 1998 et 2000 (utilisation de BETWEEN).
+-- 2. Récupérer les athlètes nés entre 2004 et 2006 (utilisation de BETWEEN).
 SELECT id_licence, nom, prenom, date_naissance 
 FROM ATHLETE 
-WHERE date_naissance BETWEEN '1998-01-01' AND '2000-12-31';
+WHERE date_naissance BETWEEN '2004-01-01' AND '2006-12-31';
 
 -- 3. Récupérer les clubs dont l'adresse e-mail contient "asso" ou "club" (utilisation de LIKE et de masque).
 SELECT nom_club, e_mail, ville 
